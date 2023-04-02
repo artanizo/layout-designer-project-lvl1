@@ -1,7 +1,112 @@
-/** CSS STYLE **/
+:root {
+  --white: #fff;
+  --semi-white: #d7ccc0;
+  --light: #f5f4f0;
+  --orange: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --semi-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  --font-size: 16px;
+}
 
-.hello {
-  display: block;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  color: #fff;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-size);
+  line-height: 1.6em;
+  color: var(--dark);
+}
+
+.bg:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+  z-index: 1;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-color {
+  background-color: #F5F4F0;
+}
+
+h1, h2, h3 {
+  font-family: 'Neucha', cursive;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.content-section {
+  width: 1110px;
+  padding: 100px 0;
+  margin: 0 auto;
+  height: 914px;
+}
+
+.header {
+  position: relative;
+}
+
+.header-title {
+  margin-bottom: 185px;
+}
+
+.header-image {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+  height: 525px;
+  z-index: 1;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+.flex-column {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.text {
+  flex: 1 1 50%;
+}
+
+.btn {
+  font-weight: bold;
+  background: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 24px;
+  width: 148px;
+  header: 49px;
 }
