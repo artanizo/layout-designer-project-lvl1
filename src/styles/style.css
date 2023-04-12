@@ -45,8 +45,12 @@ body {
   background-size: cover;
 }
 
-.bg-color {
+.bg-light {
   background-color: var(--light);
+}
+
+.bg-brown {
+  background-color: var(--brown);
 }
 
 h1,
@@ -81,7 +85,6 @@ h3 {
   width: 1110px;
   padding: 100px 0;
   margin: 0 auto;
-  height: 914px;
 }
 
 .header {
@@ -205,6 +208,10 @@ a {
   font-size: 24px;
 }
 
+.pre-title.invert-colors {
+  color: var(--semi-white);
+}
+
 .item-header {
   margin-bottom: 30px;
 }
@@ -222,4 +229,13 @@ a {
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
+}
+
+.item-how-header.invert-colors {
+  background: var(--white);
+  color: var(--brown);
+}
+
+.item-short-description {
+  font-size: 34px;
 }
